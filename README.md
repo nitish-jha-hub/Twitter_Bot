@@ -5,7 +5,7 @@ And timeout is 600 sec.
 
 To use it you need API keys from twitter devloper account
 after getting API Keys
-Create key.py file in format shown below
+Create keys.py file in format shown below
 
 API_KEY= ""
 API_SECRET_KEY= ""
