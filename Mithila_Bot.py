@@ -27,6 +27,6 @@ def twitter_bot(Keywords, delay):
 
     time.sleep(delay)
 
-twitter_bot("मिथिला", 301)
+twitter_bot("मिथिला", 351)
 
 
