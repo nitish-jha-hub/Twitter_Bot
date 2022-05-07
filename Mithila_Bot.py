@@ -1,5 +1,5 @@
 from ast import keyword
-# from numpy import result_type
+# from numpy import result_type for search result i.e-mixed, latest, etc
 import tweepy
 import keys
 import time, datetime
@@ -12,7 +12,7 @@ def twitter_bot(Keywords, delay):
   while True:
     print(f"\n{datetime.datetime.now()}\n")
 
-    for tweets in tweepy.Cursor(api.search_tweets, q=Keywords, result_type="mixed", count=5).items(5):
+    for tweets in tweepy.Cursor(api.search_tweets, q=Keywords, count=5).items(5):
       try:
         tweet_id = dict(tweets._json)["id"]
         tweet_text = dict(tweets._json)["text"]
