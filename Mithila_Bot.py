@@ -1,5 +1,5 @@
 from ast import keyword
-from numpy import result_type
+# from numpy import result_type
 import tweepy
 import keys
 import time, datetime
@@ -22,8 +22,7 @@ def twitter_bot(Keywords, delay):
 
         api.retweet(tweet_id)
 
-      except:
-        print("Error")
+      except:print("Error")
 
     time.sleep(delay)
 
